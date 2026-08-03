@@ -3818,6 +3818,7 @@ td:last-child {
  * -------------------------------------------------------------------- */
 .about-profile-pic {
     width : 100%;
+    height: 100%;
     margin: 0;
 }
 
@@ -3833,11 +3834,12 @@ td:last-child {
 .about-profile-pic img {
     padding           : 0;
     margin            : 0;
+    width             : 100%;
+    height            : 100%;
     -o-object-fit     : cover;
     object-fit        : cover;
     -o-object-position: center;
     object-position   : center;
-    aspect-ratio      : 420/560;
 }
 
 /* --------------------------------------------------------------------
@@ -3949,6 +3951,14 @@ td:last-child {
         grid-column: 1/-1;
         grid-row   : 3/span 1;
         width      : auto;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .about-profile-pic,
+    .about-profile-pic img {
+        height      : auto;
+        aspect-ratio: 4/3;
     }
 }
 
