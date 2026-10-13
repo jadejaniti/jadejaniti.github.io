@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Niti B. Jadeja, Ph.D.</title>
+<meta name="description" content="Niti B. Jadeja, Ph.D. Microbiologist working on host–pathogen biology, spatial tissue profiling, and genomics at the University of Virginia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1d2329; --muted:#5b6670; --line:#e3e6e9; --bg:#ffffff; --soft:#f6f7f8;
+    --accent:#9a3412; --accent-soft:#fdf2ec;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  img{display:block;max-width:100%}
+  .wrap{max-width:880px;margin:0 auto;padding:0 20px}
+
+  /* top bar */
+  nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:56px}
+  nav .brand{font-weight:600;color:var(--ink)}
+  nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;font-size:14px}
+  nav ul a{color:var(--muted)}
+  nav ul a:hover{color:var(--accent);text-decoration:none}
+  @media (max-width:640px){nav ul{display:none}}
+
+  /* header */
+  header{padding:56px 0 40px;border-bottom:1px solid var(--line)}
+  .hero{display:flex;gap:32px;align-items:center}
+  .hero img{width:140px;height:140px;border-radius:50%;object-fit:cover;flex:none}
+  h1{font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:40px;line-height:1.15;margin:0 0 6px}
+  .role{font-size:18px;color:var(--muted);margin:0 0 16px}
+  .links{display:flex;flex-wrap:wrap;gap:8px}
+  .btn{display:inline-block;padding:6px 14px;border:1px solid var(--line);border-radius:999px;font-size:14px;color:var(--ink);background:#fff}
+  .btn:hover{border-color:var(--accent);color:var(--accent);text-decoration:none}
+  .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+  .btn.primary:hover{color:#fff;opacity:.9}
+  @media (max-width:640px){.hero{flex-direction:column;align-items:flex-start;gap:20px}.hero img{width:110px;height:110px}h1{font-size:32px}}
+
+  section{padding:44px 0;border-bottom:1px solid var(--line)}
+  h2{font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:26px;margin:0 0 20px}
+  h3{font-size:16px;font-weight:600;margin:0 0 2px}
+  p{margin:0 0 12px}
+  .muted{color:var(--muted)}
+  .small{font-size:14px}
+
+  /* research cards: small square thumbnails */
+  .cards{display:grid;gap:18px}
+  .card{display:flex;gap:16px;align-items:flex-start}
+  .card img{width:96px;height:96px;object-fit:cover;border-radius:8px;border:1px solid var(--line);flex:none;background:var(--soft)}
+  .card p{margin:4px 0 4px;font-size:15px}
+  .tag{display:inline-block;font-size:12px;font-weight:500;color:var(--accent);background:var(--accent-soft);padding:1px 8px;border-radius:999px;margin-right:6px}
+
+  /* timeline lists */
+  .rows{display:grid;gap:14px}
+  .row{display:grid;grid-template-columns:150px 1fr;gap:16px}
+  .row .when{color:var(--muted);font-size:14px;padding-top:1px}
+  @media (max-width:640px){.row{grid-template-columns:1fr;gap:0}}
+
+  /* small photo grids */
+  .gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;max-width:760px}
+  .gallery figure{margin:0}
+  .gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:8px;border:1px solid var(--line)}
+  .gallery figcaption{font-size:12.5px;line-height:1.4;color:var(--muted);margin-top:6px}
+  .gallery.tiny{grid-template-columns:repeat(auto-fill,minmax(110px,1fr));max-width:560px}
+  .wide-thumb{max-width:420px;border:1px solid var(--line);border-radius:8px}
+
+  ul.pubs{padding-left:18px;margin:0}
+  ul.pubs li{margin-bottom:8px;font-size:15px}
+
+  footer{padding:28px 0 40px;font-size:13px;color:var(--muted)}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top">Niti B. Jadeja</a>
+    <ul>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#talks">Talks</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header id="top">
+  <div class="wrap hero">
+    <img src="profile.jpg" alt="Portrait of Niti B. Jadeja" width="140" height="140">
+    <div>
+      <h1>Niti B. Jadeja, Ph.D.</h1>
+      <p class="role">Microbiologist · Host–pathogen biology, spatial tissue profiling, and genomics</p>
+      <div class="links">
+        <a class="btn primary" href="Niti_Jadeja_CV.pdf">Download CV</a>
+        <a class="btn" href="https://github.com/jadejaniti">GitHub</a>
+        <a class="btn" href="https://scholar.google.co.in/citations?user=OOuxVm4AAAAJ&amp;hl=en">Google Scholar</a>
+        <a class="btn" href="https://www.linkedin.com/in/drnitijadeja">LinkedIn</a>
+        <a class="btn" href="https://orcid.org/0000-0002-2199-9605">ORCID</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About</h2>
+    <p>I study how tissues respond to infection. As a Postdoctoral Research Associate in the Agaisse Lab at the University of Virginia School of Medicine, I map <em>Shigella</em> invasion and the local immune response in the colon, combining multiplex RNAscope on FFPE tissue, quantitative image analysis, and RNA-seq of infected tissue and human biopsies.</p>
+    <p>Before UVA, I worked on microbial genomics, metagenomics, and antimicrobial resistance across environmental and One Health settings in India and Finland, and contributed to the IPCC Sixth Assessment Report and the UN Interagency Coordination Group on Antimicrobial Resistance.</p>
+    <p class="muted">13+ years of research · 15 peer-reviewed publications · 5 book chapters · 15+ students and staff trained</p>
+  </div>
+</section>
+
+<section id="research">
+  <div class="wrap">
+    <h2>Selected research</h2>
+    <div class="cards">
+
+      <div class="card">
+        <img src="shigella-spatial.jpg" alt="Immunofluorescence image of infected colon tissue" loading="lazy">
+        <div>
+          <h3>Spatial mapping of <em>Shigella</em> invasion</h3>
+          <p>Spatial and temporal mapping of colonic invasion in the infant rabbit model: which cells are invaded, in what order, and how macrophage and neutrophil responses are organized around invasion sites.</p>
+          <span class="tag">Spatial biology</span><span class="tag">Immunology</span>
+          <a class="small" href="https://doi.org/10.64898/2026.09.11.751053">Preprint (bioRxiv 2026)</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="serology-power.jpg" alt="Mixture model of antibody concentrations" loading="lazy">
+        <div>
+          <h3>Serology QC and power analysis in R</h3>
+          <p>A reproducible analysis of a public serosurvey (3,080 sera): data QC, assay cutoff evaluation with a mixture model, seroprevalence with confidence intervals, and power and sample-size calculations for study design.</p>
+          <span class="tag">Biostatistics</span><span class="tag">R</span>
+          <a class="small" href="https://github.com/jadejaniti/Serology-power-analysis">Code on GitHub</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="amr-onehealth.jpg" alt="Diagram of antimicrobial resistance transmission pathways" loading="lazy">
+        <div>
+          <h3>Antimicrobial resistance across One Health niches</h3>
+          <p>A review of how antimicrobial resistance moves between animal, agricultural, and environmental reservoirs, informing international AMR policy discussions.</p>
+          <span class="tag">AMR</span><span class="tag">One Health</span>
+          <a class="small" href="https://enviromicro-journals.onlinelibrary.wiley.com/doi/10.1111/1462-2920.15927">Environmental Microbiology 2022</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="rabies-phylo.jpg" alt="Phylogenetic tree of rabies virus genomes" loading="lazy">
+        <div>
+          <h3>Genomics of Indian rabies virus isolates</h3>
+          <p>Oxford Nanopore whole-genome sequencing of canine rabies virus isolates and phylogenetic analysis for One Health surveillance.</p>
+          <span class="tag">Genomics</span><span class="tag">Nanopore</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="kegg-wastewater.jpg" alt="Metabolic pathway map from wastewater metagenomes" loading="lazy">
+        <div>
+          <h3>Microbial communities in wastewater treatment</h3>
+          <p>Metagenomic analysis of how activated-sludge communities adapt and which degradation pathways they carry, to design more efficient industrial treatment.</p>
+          <span class="tag">Metagenomics</span>
+          <a class="small" href="https://link.springer.com/article/10.1007/s10142-019-00681-4">Functional &amp; Integrative Genomics 2019</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2>Experience</h2>
+    <div class="rows">
+      <div class="row"><div class="when">2022 – present</div><div><h3>Postdoctoral Research Associate</h3><div class="muted small">Agaisse Lab, School of Medicine, University of Virginia</div></div></div>
+      <div class="row"><div class="when">2020 – 2022</div><div><h3>Postdoctoral Fellow</h3><div class="muted small">Ashoka Trust for Research in Ecology and the Environment (ATREE), Bangalore</div></div></div>
+      <div class="row"><div class="when">2018 – 2019</div><div><h3>Research Scientist</h3><div class="muted small">Foundation for Medical Research, Mumbai</div></div></div>
+      <div class="row"><div class="when">2010 – 2018</div><div><h3>Senior Research Fellow and Project Fellow</h3><div class="muted small">CSIR–National Environmental Engineering Research Institute (NEERI), Nagpur; visiting researcher, Finnish Environment Institute (SYKE), Helsinki, 2016</div></div></div>
+    </div>
+
+    <h2 style="margin-top:36px">Education</h2>
+    <div class="rows">
+      <div class="row"><div class="when">2019</div><div><h3>Ph.D., Biotechnology</h3><div class="muted small">RTMNU, Nagpur (research at CSIR–NEERI)</div></div></div>
+      <div class="row"><div class="when">2010</div><div><h3>M.Sc., Biotechnology</h3><div class="muted small">Sardar Patel University</div></div></div>
+      <div class="row"><div class="when">2008</div><div><h3>B.Sc., Botany (Gold Medallist)</h3><div class="muted small">Veer Narmad South Gujarat University</div></div></div>
+      <div class="row"><div class="when">2026</div><div><h3>Certificate, Immuno-oncology</h3><div class="muted small">Harvard Medical School (HMX)</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="leadership">
+  <div class="wrap">
+    <h2>Leadership and service</h2>
+    <div class="rows">
+      <div class="row"><div class="when">2023 – 2026</div><div><h3>Vice Chair, Professional Development Committee</h3><div class="muted small">UVA Postdoctoral Association</div></div></div>
+      <div class="row"><div class="when">2023 – 2024</div><div><h3>Founder, Postdoctoral Leadership</h3><div class="muted small">Department of Microbiology, Immunology and Cancer Biology, UVA</div></div></div>
+      <div class="row"><div class="when">2022</div><div><h3>Jury member and mentor, NITI Next Generation Water Action</h3><div class="muted small">DTU Skylab, Technical University of Denmark (representing IWA Young Water Professionals, India)</div></div></div>
+      <div class="row"><div class="when">2020 – 2022</div><div><h3>Chapter Coordinator</h3><div class="muted small">International Water Association, Global Emerging Water Leaders</div></div></div>
+    </div>
+    <img class="wide-thumb" style="margin-top:20px" src="jury-2022.jpg" alt="Jury panel, NITI Next Generation Water Action 2022" loading="lazy">
+  </div>
+</section>
+
+<section id="publications">
+  <div class="wrap">
+    <h2>Selected publications</h2>
+    <ul class="pubs">
+      <li><strong>Jadeja NB</strong>, Devasure BA, Yum LK, Agaisse HF (2026). Sequential invasion of epithelial and immune cells in shigellosis. <em>bioRxiv</em>. <a href="https://doi.org/10.64898/2026.09.11.751053">doi</a></li>
+      <li>Hall CP, <strong>Jadeja NB</strong>, Sebeck N, Agaisse H (2022). Characterization of MxiE- and H-NS-dependent expression of ipaH7.8, ospC1, yccE, and yfdF in <em>Shigella flexneri</em>. <em>mSphere</em> 7(6).</li>
+      <li><strong>Jadeja NB</strong>, Worrich A (2022). From gut to mud: dissemination of antimicrobial resistance between animal and agricultural niches. <em>Environmental Microbiology</em> 24(8). <a href="https://enviromicro-journals.onlinelibrary.wiley.com/doi/10.1111/1462-2920.15927">link</a></li>
+      <li>Kumar A, … <strong>Jadeja NB</strong>, … Tatu U (2022). Genome sequences of five Indian canine rabies virus isolates obtained using Oxford Nanopore sequencing. <em>Microbiology Resource Announcements</em> 11(5).</li>
+      <li><strong>Jadeja NB</strong>, Purohit HJ, Kapley A (2019). Decoding microbial community intelligence through metagenomics for efficient wastewater treatment. <em>Functional &amp; Integrative Genomics</em> 19. <a href="https://link.springer.com/article/10.1007/s10142-019-00681-4">link</a></li>
+    </ul>
+    <p class="small muted" style="margin-top:12px">Full list on <a href="https://scholar.google.co.in/citations?user=OOuxVm4AAAAJ&amp;hl=en">Google Scholar</a> and <a href="https://orcid.org/0000-0002-2199-9605">ORCID</a>.</p>
+  </div>
+</section>
+
+<section id="talks">
+  <div class="wrap">
+    <h2>Talks and conferences</h2>
+    <p class="small muted">EMBO Workshop on <em>Shigella</em>, Paris (2026) · Neutrophil Conference, San Diego (2026) · IUIS Congress, Vienna (2025) · Wellcome Trust SEDRIC and Chatham House AMR meetings, London (2019)</p>
+    <div class="gallery">
+      <figure><img src="talk-embo-2026.jpg" alt="Talk at the EMBO Shigella workshop, Paris" loading="lazy"><figcaption>EMBO Workshop, Institut Pasteur, Paris, 2026</figcaption></figure>
+      <figure><img src="talk-embo-lab-2026.jpg" alt="Presenting the Agaisse lab's work" loading="lazy"><figcaption>Presenting the Agaisse lab's work, Paris, 2026</figcaption></figure>
+      <figure><img src="poster-isme.jpg" alt="Poster presentation" loading="lazy"><figcaption>ISME poster, Leipzig</figcaption></figure>
+      <figure><img src="award-neeri-2013.jpg" alt="Receiving an award at CSIR-NEERI" loading="lazy"><figcaption>Award, CSIR-NEERI 55th Foundation Day, 2013</figcaption></figure>
+      <figure><img src="internship-2010.jpg" alt="In the lab during master's internship" loading="lazy"><figcaption>Master's internship, 2010</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="beyond">
+  <div class="wrap">
+    <h2>Beyond the lab</h2>
+    <p>In 2016, an Academy of Finland mobility grant took me to the Finnish Environment Institute for metagenomic work on Baltic Sea sediments, including fieldwork at sea. Outside research, I love to travel.</p>
+    <div class="gallery tiny">
+      <figure><img src="baltic-1.jpg" alt="Sampling on the Baltic Sea" loading="lazy"><figcaption>Baltic Sea fieldwork</figcaption></figure>
+      <figure><img src="baltic-2.jpg" alt="Sediment sampling on deck" loading="lazy"><figcaption>Sampling on deck</figcaption></figure>
+      <figure><img src="baltic-3.jpg" alt="With the SYKE team" loading="lazy"><figcaption>With the SYKE team</figcaption></figure>
+      <figure><img src="travel-aurora.jpg" alt="Northern lights, Norway" loading="lazy"><figcaption>Norway</figcaption></figure>
+      <figure><img src="travel-copenhagen.jpg" alt="Nyhavn, Copenhagen" loading="lazy"><figcaption>Copenhagen</figcaption></figure>
+      <figure><img src="travel-tulips.jpg" alt="Tulip fields, the Netherlands" loading="lazy"><figcaption>Netherlands</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="border-bottom:0">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <p>I'm always happy to talk about research, collaborations, or opportunities.</p>
+    <p><a href="mailto:nitijadeja@virginia.edu">nitijadeja@virginia.edu</a> · Charlottesville, VA</p>
+    <div class="links">
+      <a class="btn" href="https://www.linkedin.com/in/drnitijadeja">LinkedIn</a>
+      <a class="btn" href="https://www.researchgate.net/profile/Niti_Jadeja">ResearchGate</a>
+      <a class="btn" href="https://scholar.google.co.in/citations?user=OOuxVm4AAAAJ&amp;hl=en">Google Scholar</a>
+      <a class="btn" href="https://github.com/jadejaniti">GitHub</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Niti B. Jadeja</div>
+</footer>
+
+</body>
+</html>
